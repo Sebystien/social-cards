@@ -1,0 +1,230 @@
+//Bg on top
+/*.bg{
+    position: absolute;
+    top: 0;
+    background:var(--color-secondary-bg);
+    height: 23.5rem;
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+   
+   z-index: -20;
+}*/
+/***********
+   SWITCH
+************/
+
+.header__switch{
+    padding-top: 1.8rem;
+    border-top: 1px solid #333A55;
+
+    //Remove when viewport is larger
+    @include responsive(tab){
+        border-top: none;
+        display: flex;
+        
+    }
+
+    
+    &--label{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    &--toggle{
+      display: none;
+    }
+
+    .txt{
+        font-size: 1.4rem;
+        font-weight: 700;
+        color:var(--color-text);
+
+        @include responsive(tab){
+           margin-right: 1.3rem;
+           color: var(--color-second-txt);
+           
+        }
+    }
+
+    .btn{
+        width: 4.8rem;
+        height: 2.4rem;
+        border-radius: 12px;
+        background: var(--toggle);
+        display: inline-block;
+        position: relative;
+
+        &::before{
+         width: 1.8rem;
+         height: 1.8rem;
+         border-radius: 50%;
+         background: var(--color-card-bg);
+         content: '';
+         position: absolute;
+         top: 3px;
+         left: 3px;
+         transition: all .4s;
+        }
+
+       
+    }
+
+    &--toggle:checked ~ .btn::before{
+        transform: translateX(2.4rem);
+        
+    }
+}
+
+
+/***********
+CARDS
+************/
+
+.cards{
+
+    @include basic-feat();
+    text-align: center;
+   
+    overflow: hidden;
+    padding: 3.2rem 0 2.4rem;
+    margin-bottom: 2.4rem;
+
+
+  /*
+  Border top
+  */
+
+    &__border{
+        &--fb{
+            @include bd-top(var(--color-fb));
+        }
+
+        &--twitter{
+            @include bd-top(var(--color-tw));
+        }
+
+        &--ig{
+            @include bd-top(var(--color-ig));
+            
+        }
+
+        &--yt{
+            @include bd-top(var(--color-yt));
+            
+        }
+
+    }
+
+    &__top{
+        margin-bottom: 2.8rem;
+        
+       
+    }
+
+
+
+    &__social-handle{
+        color: var(--color-text);
+        margin-left: .8rem;
+        vertical-align: middl;
+    }
+
+    &__counts{
+        margin-bottom: 2.4rem;
+        &>*{
+            display: block;
+        }
+        &--numb{
+            font-size: 5.6rem;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: .8rem;
+            color: var(--color-second-txt);
+        }
+        &--txt{
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 5px;
+            color: var(--color-text);
+            text-transform: uppercase;
+            
+
+        }
+    }
+
+   
+
+    &__date{
+        color: var(--color-second-txt);
+        font-size: 1.2rem;
+
+        &--green{
+            color: var(--color-lime-green);
+        }
+
+        &--red{
+            color: var(--color-yt);
+        }
+    }
+
+
+    h3{
+        display: inline-block;
+       
+    }
+
+
+    &__footer{
+       img{
+           vertical-align: middle;
+       }
+
+    }    
+
+}
+
+
+/***********
+CARDS MINI
+************/
+
+.cards-mini{
+    @include basic-feat();
+    padding: 2.6rem 3.1rem 2.4rem 2.4rem;
+        margin-bottom: 1.6rem;
+    
+
+
+    &__top{
+        margin-bottom: 2.1rem;
+        h3{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    &__stats{
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: var(--color-second-txt);
+    }
+
+    &__img{
+        height: 2rem;
+        width: auto;
+    }
+
+    &__body{
+
+        align-items: flex-end;
+
+        img{
+            vertical-align: middle;
+        }
+        h3{
+            display:inline-block;
+            line-height: 1;
+        }
+    }
+}

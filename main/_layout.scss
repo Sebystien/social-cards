@@ -1,0 +1,102 @@
+/*
+
+
+Layout and media queries
+*/
+
+
+
+@mixin responsive($size) {
+    @if $size == tab {
+        @media (min-width: 40rem) {
+            @content;
+        }
+    }
+
+    @if $size == laptop {
+        @media (min-width: 69.37rem) {
+            @content;
+        }
+    }
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+
+    @include responsive(laptop){
+        max-width: 110rem;
+    }
+
+}
+
+.header{
+    padding-top: 3.8rem;
+    background:var(--color-secondary-bg);
+    height: 23.5rem;
+    width: 100%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-bottom: 8.4rem;
+
+    @include responsive(tab){
+        height: 24.4rem;
+       
+    }
+
+    &--flex{
+        @include responsive(tab){
+            display: flex;
+            justify-content: space-between;
+           
+        }
+    }
+
+    &__title{
+        font-weight: 700;
+        
+        margin-bottom: 2.4rem;
+
+        &>*{
+            display: block;
+        }
+
+        &--main{
+            font-size: 2.4rem;
+            color: var(--color-second-txt);
+            margin-bottom: .4rem;
+        }
+
+        &--sub{
+            font-size:1.4rem;
+            color: var(--color-text);
+        }
+    }
+
+   
+}
+
+.overlap{
+    transform: translateY(-4rem);
+
+    @include responsive(tab){
+        transform: translateY(-10rem);
+    }
+}
+
+.flexer{
+    display: flex;
+    
+    flex-direction: column;
+    
+   
+}
+
+section.container, section{
+    margin-bottom: 4.6rem;
+}
+
+.secondary-title{
+    margin-bottom: 2.7rem;
+}
+

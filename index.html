@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css" type="text/css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  
+</head>
+<body data-theme="dark">
+
+
+  
+  <header class="header">
+    <div class=" header--flex container">
+      <h1 class="header__title">
+        <span class="header__title--main">Social Media Dashboard</span>
+        <span class="header__title--sub"> Total Followers: 23,004</span>
+      </h1>
+  
+      <div class="header__switch">
+        <label for="switch" class="header__switch--label">
+           <span class="txt">Dark Mode</span>
+            <input type="checkbox" class="header__switch--toggle" id="switch">
+            <span class="btn"></span>
+        </label>
+  
+      </div>
+    </div>
+  </header>
+  <!--Overlaping the header-->
+  <div class="overlap">
+    <div class=" container" >
+    
+
+      <!--
+        I created some components for the cards
+      -->
+  
+      <section class="main flexer">
+  
+        <!--
+          First
+        -->
+        <div class="cards cards__square cards__border--fb">
+          <div class="cards__top flex jt-center al-center">
+          
+            <img src="./images/icon-facebook.svg" alt="Facebook" class="cards__social cards__social--fb">
+          
+            <h3 class="cards__social-handle">@nathanf</h3>
+          </div>
+          <!--BODY-->
+          <h2 class="cards__counts">
+            <span class="cards__counts--numb">1987</span>
+            <span class="cards__counts--txt">followers</span>
+          </h2>
+  
+          <!--FOOTER-->
+  
+          <div class="cards__footer">
+            
+            
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+            
+            <h3 class="cards__date">12 Today</h3>
+          </div>
+  
+        </div>
+  
+        <!--
+         Second
+        -->
+        <div class="cards cards__square cards__border--twitter">
+          <div class="cards__top flex jt-center al-center">
+          
+            <img src="./images/icon-twitter.svg" alt="Facebook" class="cards__social cards__social--fb">
+          
+            <h3 class="cards__social-handle">@nathanf</h3>
+          </div>
+          <!--BODY-->
+          <h2 class="cards__counts">
+            <span class="cards__counts--numb">1044</span>
+            <span class="cards__counts--txt">followers</span>
+          </h2>
+  
+          
+  
+          <!--FOOTER-->
+  
+          <div class="cards__footer">
+            
+            
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+            
+            <h3 class="cards__date cards__date--green">99 Today</h3>
+          </div>
+  
+        </div>
+  
+        
+         <!--
+        Third
+        -->
+        <div class="cards cards__square cards__border--ig">
+          <div class="cards__top flex jt-center al-center">
+          
+            <img src="./images/icon-instagram.svg" alt="instagram" class="cards__social cards__social--fb">
+          
+            <h3 class="cards__social-handle">@officiallyseb</h3>
+          </div>
+          <!--BODY-->
+          <h2 class="cards__counts">
+            <span class="cards__counts--numb">11k</span>
+            <span class="cards__counts--txt">followers</span>
+          </h2>
+  
+          
+  
+          <!--FOOTER-->
+  
+          <div class="cards__footer">
+            
+            
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+            
+            <h3 class="cards__date cards__date--green">1099 Today</h3>
+          </div>
+  
+        </div>
+  
+       
+         <!--
+       Last one
+        -->
+        <div class="cards cards__square cards__border--yt">
+          <div class="cards__top flex jt-center al-center">
+          
+            <img src="./images/icon-youtube.svg" alt="dribbble lol, not my real YT" class="cards__social cards__social--fb">
+          
+            <h3 class="cards__social-handle">Seb A.</h3>
+          </div>
+          <!--BODY-->
+          <h2 class="cards__counts">
+            <span class="cards__counts--numb">8239</span>
+            <span class="cards__counts--txt">subscribers</span>
+          </h2>
+  
+          
+  
+          <!--FOOTER-->
+  
+          <div class="cards__footer">
+            
+            
+              <img src="./images/icon-down.svg" alt="up" class="cards__small-icon">
+            
+            <h3 class="cards__date cards__date--red">144 Today</h3>
+          </div>
+  
+          </div>
+  
+        </div>
+      </section>
+  
+    <div class="container">
+      <h2 class="secondary-title">
+        Overview - Today
+      </h2>
+    </div>
+  
+  
+      <section class="rect-cards container flexer">
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">Page views</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-facebook.svg" class="cards-mini__img " alt="facebook">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">87</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--green">3%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+        <!--
+          SECOND MID CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">likes</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-facebook.svg" class="cards-mini__img " alt="facebook">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">52</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-down.svg" alt="down" class="cards__small-icon">
+              <h3 class="cards__date cards__date--red">3%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+         <!--
+         3rd MINI CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">likes</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-instagram.svg" class="cards-mini__img " alt="@officiallyseb">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">5462</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--green">2257%%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+        <!--
+         $th  MINI CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">Profile views</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-instagram.svg" class="cards-mini__img " alt="@officiallyseb">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">52k</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--green">1375%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+         <!--
+         5th  MINI CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">Retweets</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-twitter.svg" class="cards-mini__img " alt="dribbble sebystien">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">117</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--green">303%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+         <!--
+         6th  MINI CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">Likes</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-twitter.svg" class="cards-mini__img " alt="dribbble sebystien">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">507</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-up.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--green">553%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+  
+        <!--
+         7th  MINI CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">Likes</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-youtube.svg" class="cards-mini__img " alt="dribbble sebystien">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">107</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-down.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--red">19%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+  
+         <!--
+         8th  MINI CARD
+        -->
+  
+        <div class="cards-mini">
+          <!--HEADER-->
+           <div class="cards-mini__top flex sp-between al-center">
+             <h3 class="header__title--sub">Total Views</h3>
+             <div class="cards-mini__img-box">
+               <img src="./images/icon-youtube.svg" class="cards-mini__img " alt="dribbble sebystien">
+             </div>
+              
+  
+           </div>
+  
+           <!--BODY-->
+           <div class="cards-mini__body flex al-center sp-between">
+             <h2 class="cards-mini__stats">1407</h2>
+             <div class="cards-mini__box">
+              <img src="./images/icon-down.svg" alt="up" class="cards__small-icon">
+              <h3 class="cards__date cards__date--red">12%</h3>
+             </div>
+  
+           </div>
+  
+        </div>
+  
+  
+  
+      </section>
+  
+      
+  
+    </div>
+  
+  
+  
+
+  </div>
+ 
+ 
+
+
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded with ♥️ by Seby. My <a href="https://dribbble.com/sebystien">dribbble</a> and <a href="https://instagram.com/officiallyseb">IG</a>.
+  </div>
+
+  <script>
+    const toggle = document.getElementById('switch');
+
+
+    toggle.addEventListener('change', e=>{
+      e.preventDefault();
+      if(e.target.checked){
+        document.body.setAttribute('data-theme', 'light');
+      }else{
+        document.body.removeAttribute('data-theme')
+      }
+      console.log('heyyy')
+    });
+  </script>
+</body>
+</html>
