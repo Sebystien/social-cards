@@ -118,7 +118,7 @@ Layout and media queries
       color: var(--color-text); }
 
 .overlap {
-  transform: translateY(-4rem); }
+  transform: translateY(-100rem); }
   @media (min-width: 40rem) {
     .overlap {
       transform: translateY(-10rem); } }
@@ -171,8 +171,7 @@ section.container, section {
     color: var(--color-text); }
     @media (min-width: 40rem) {
       .header__switch .txt {
-        margin-right: 1.3rem;
-        color: var(--color-second-txt); } }
+        margin-right: 1.3rem; } }
   .header__switch .btn {
     width: 4.8rem;
     height: 2.4rem;
