@@ -86,9 +86,24 @@ Layout and media queries
 
 .flexer{
     display: flex;
-    
-    flex-direction: column;
-    
+   flex-wrap: wrap;
+   // flex-flow:row wrap;
+ 
+   
+
+
+    &>*{
+        //flex:0 0 100%;    
+        width: 100%;
+        
+       // flex-basis: 25%;
+        @include responsive(laptop){
+           
+            width: calc(25% - 40px);
+            margin: 2rem;
+            
+        }
+    }
    
 }
 

@@ -125,7 +125,13 @@ Layout and media queries
 
 .flexer {
   display: flex;
-  flex-direction: column; }
+  flex-wrap: wrap; }
+  .flexer > * {
+    width: 100%; }
+    @media (min-width: 69.37rem) {
+      .flexer > * {
+        width: calc(25% - 40px);
+        margin: 2rem; } }
 
 section.container, section {
   margin-bottom: 4.6rem; }
